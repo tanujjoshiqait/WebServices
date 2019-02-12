@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="Stylesheet" href="AccountLogin.css">
+	<title>Your Website</title>
+</head>
+
+<body>
+	<center>
+		<header>
+			<nav>
+			</nav>
+		</header>
+
+		<legend><h2>Login Form</legend></h2>
+
+		<div class="imgcontainer">
+			<img src="pic.png" alt="Avatar" class="avatar">
+		</div>
+
+  	<form action="http://localhost:8080/RestJersey/rest/WebService/login" method="post" class="container">
+
+  		<label for="uname">Username: </label><input type="email" name="uname" Placeholder="Enter username"><br>
+
+			<label for="pass">Password: </label><input type="password" name="pass" Placeholder="Enter Password"><br>
+
+  		<input type="checkbox" checked="checked" name="remember"> Remember me<br><br>
+
+			<input class="button" type="Submit" value="Login">
+
+			<button class="button" onclick="location.href='SignUp.html'" type="button">SignUp</button><br><br>
+
+		</form>
+
+		<input type="image" src="google.jpeg" alt="Submit" width="48" height="48" onclick="location.href='http://gmail.com'">
+
+
+
+		<footer>
+			<p>Copyright 2019 QA Infotech Pvt. Ltd.</p>
+		</footer>
+
+	</center>
+
+</body>
+
+</html>

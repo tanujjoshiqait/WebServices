@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Welcome to your Profile Page</h1>
+
+<form action="http://localhost:8080/RestJersey/rest/CommentsService/insertComment" method="post">
+  User Name: <input type='text' name='uname' placeholder='enter user name' /><br />
+ 
+  Comment:<br />
+  <textarea name='comment'></textarea><br />
+  
+  <input type='submit' value='Submit' />  
+</form>
+
+
+<div><h3>Find User comments</h3>
+<form action="http://localhost:8080/RestJersey/rest/CommentsService/getComment" method="get">
+  
+  	<select name="byType">
+							<option value="">Comment Filter</option>
+							<option value="all">All</option>
+							<option value="byUser">By User</option>
+	</select><br>
+				
+  User Name: <input type='text' name='uname' placeholder='enter user name' /><br />
+ 
+  <input type='submit' value='Show Comments' />  
+</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="Stylesheet" href="SignUp.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<title> SignUp
+	</title>
+
+	<style>
+    body {
+			background:url("backgr.jpg");
+			background-repeat: repeat;
+			background-attachment: fixed;
+		}
+	</style>
+
+</head>
+
+	<body class="container">
+		<header>
+			<nav>
+			</nav>
+		</header>
+<div class="row">
+
+
+<div class="col-sm-12 col-lg-7 col-md-7">
+		<form action="http://localhost:8080/RestJersey/rest/SignUpService/SignUp" method="post" >
+			<div>
+				<div class="row">
+					<div class="col-sm-2"><label for="name" >Name:</label></div> <div class="col-sm-10"><input type="text" name="name" placeholder="Enter Full Name" ></div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2"><label for="address">Address:</label></div> <div class="col-sm-10"><input type="text" name="address"placeholder="Enter full address"></div><br>
+					</div>
+
+  			<div class="row">
+					<div class="col-sm-2"><label for="uname">Username:</label> </div><div class="col-sm-10"><input type="email" name="uname" placeholder="Enter username"></div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2"><label for="pass">Password:</label> </div><div class="col-sm-10"><input type="password" name="pass" placeholder="Enter password"></div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2"><label for="cpass">Confirm Password:<label> </div><div class="col-sm-10"><input type="password" name="cpass" placeholder="confirm password" ></div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2"><label for="gender">Gender:</label></div><div class="col-sm-10"><label for="gender">Male</label><input type="radio" name="gender" value="Male">
+
+  				<label for="gender">Female</label><input type="radio" name="gender" value="Female">
+
+  				<label for="gender">Other</label><input type="radio" name="gender" value="Other"></div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2"><label for="dob">Date of Birth:</label></div><div class="col-sm-10"><input type="date" name="dob" placeholder="Enter date of birth" ></div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2"><label for="mob">Mobile Number:</label> </div><div class="col-sm-10"> <input type="number" name="mob" placeholder="Enter mobile number" ></div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2"><label for="lang">Language Known:</label> </div><div class="col-sm-10"> <input type="text" name="lang" placeholder="Enter language known" ></div><br>
+				</div>
+
+  			<div class="row">
+					<div class="col-sm-2"><label for="country">Country:</label></div>
+					<div class="col-sm-10">
+						<select name="country">
+							<option value="">Country...</option>
+							<option value="Afganistan">Afghanistan</option>
+							<option value="East Timor">East Timor</option>
+							<option value="Ecuador">Ecuador</option>
+							<option value="Egypt">Egypt</option>
+							<option value="Haiti">Haiti</option>
+							<option value="Hawaii">Hawaii</option>
+							<option value="Honduras">Honduras</option>
+							<option value="Iceland">Iceland</option>
+							<option value="India">India</option>
+							<option value="Indonesia">Indonesia</option>
+							<option value="Israel">Israel</option>
+							<option value="Italy">Italy</option>
+							<option value="Russia">Russia</option>
+							<option value="Rwanda">Rwanda</option>
+							<option value="St Barthelemy">St Barthelemy</option>
+
+						</select><br>
+					</div>
+				</div><br>
+
+  		<div class="row">
+				<div class="col-sm-2 "><label for="profile">Profile Image:</label></div><div class="col-sm-10"><input type="file" name="profile" name="pic" accept="image/*"></div><br>
+			</div><br>
+			<input class="button" type="Submit" value="Submit"><br>
+
+		</div><br>
+	</form>
+</div>
+
+<div class="col-sm-12 col-lg-5 col-md-5 ">
+	<input class="img-responsive"  type="image" class="imgcontainer" src="signup.jpeg" alt="Submit" width="250" height="250" onclick="location.href='http://gmail.com'">
+</div>
+
+
+</div>
+	<footer class="col-sm-12">
+		<p>Copyright 2019 TMusical Pvt. Ltd.</p>
+	</footer>
+
+</body>
+
+</html>
